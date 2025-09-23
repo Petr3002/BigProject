@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlaneGeometry.a CMakeFiles/PlaneGeometry.dir/PlaneGeometry_autogen/mocs_compilation.cpp.o CMakeFiles/PlaneGeometry.dir/PlaneOperations.cpp.o
+/usr/bin/ranlib libPlaneGeometry.a

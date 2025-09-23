@@ -1,0 +1,1 @@
+/usr/bin/g++-13 -DQT_QML_DEBUG -g -rdynamic CMakeFiles/Viewer2d.dir/main.o CMakeFiles/Viewer2d.dir/mainwindow.o CMakeFiles/Viewer2d.dir/drawwidget.o -o Viewer2d  -lPlaneGeometry -lQt::Core -lQt::Widgets -lQt::Gui 

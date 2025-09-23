@@ -1,0 +1,5 @@
+PlaneGeometry_autogen/timestamp: \
+	/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry/CMakeLists.txt \
+	/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry/PlaneOperations.cpp \
+	/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry/PlaneOperations.h \
+	/usr/bin/cmake

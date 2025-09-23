@@ -1,0 +1,185 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/apps",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-src.apps-Debug-50dbd47a2650d25d642b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/apps"
+				},
+				{
+					"build" : "src/apps/Viewer2d",
+					"jsonFile" : "directory-src.apps.Viewer2d-Debug-fadf7ad1fcfd93818f9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/apps/Viewer2d",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "src/lib",
+					"childIndexes" : 
+					[
+						5
+					],
+					"jsonFile" : "directory-src.lib-Debug-13ebd6f46d3a8d26f167.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/lib"
+				},
+				{
+					"build" : "src/lib/PlaneGeometry",
+					"jsonFile" : "directory-src.lib.PlaneGeometry-Debug-5c990d8748c739a2102d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/lib/PlaneGeometry",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "BigProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "PlaneGeometry::@4862c6e8a9023a6ad953",
+					"jsonFile" : "target-PlaneGeometry-Debug-98f5d0701ea939122ab6.json",
+					"name" : "PlaneGeometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PlaneGeometry_autogen::@4862c6e8a9023a6ad953",
+					"jsonFile" : "target-PlaneGeometry_autogen-Debug-3ffd7c83d40b01e431b9.json",
+					"name" : "PlaneGeometry_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PlaneGeometry_autogen_timestamp_deps::@4862c6e8a9023a6ad953",
+					"jsonFile" : "target-PlaneGeometry_autogen_timestamp_deps-Debug-661d7640fe5f1e8a5dee.json",
+					"name" : "PlaneGeometry_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Viewer2d::@4594985fcce35a0beb51",
+					"jsonFile" : "target-Viewer2d-Debug-49b2ee9c1badae0ff575.json",
+					"name" : "Viewer2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Viewer2d_autogen::@4594985fcce35a0beb51",
+					"jsonFile" : "target-Viewer2d_autogen-Debug-459a9d1a77b32013109b.json",
+					"name" : "Viewer2d_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Viewer2d_autogen_timestamp_deps::@4594985fcce35a0beb51",
+					"jsonFile" : "target-Viewer2d_autogen_timestamp_deps-Debug-aa8254729f1c4f6d4e5f.json",
+					"name" : "Viewer2d_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug",
+		"source" : "/home/peter/BigProject/bigprojecttemplate"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
