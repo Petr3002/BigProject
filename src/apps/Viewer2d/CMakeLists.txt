@@ -4,7 +4,9 @@ add_executable(Viewer2d
   mainwindow.cpp
   mainwindow.ui
   drawwidget.cpp
-  drawwidget.h)
+  drawwidget.h
+  longdouble.h longdouble.cpp
+)
 
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../../lib)
 link_directories( ${CMAKE_SOURCE_DIR}/src/lib )

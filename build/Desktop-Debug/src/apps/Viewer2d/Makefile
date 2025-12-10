@@ -206,6 +206,30 @@ drawwidget.cpp.s:
 	cd /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug && $(MAKE) $(MAKESILENT) -f src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/build.make src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/drawwidget.cpp.s
 .PHONY : drawwidget.cpp.s
 
+longdouble.o: longdouble.cpp.o
+.PHONY : longdouble.o
+
+# target to build an object file
+longdouble.cpp.o:
+	cd /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug && $(MAKE) $(MAKESILENT) -f src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/build.make src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/longdouble.cpp.o
+.PHONY : longdouble.cpp.o
+
+longdouble.i: longdouble.cpp.i
+.PHONY : longdouble.i
+
+# target to preprocess a source file
+longdouble.cpp.i:
+	cd /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug && $(MAKE) $(MAKESILENT) -f src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/build.make src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/longdouble.cpp.i
+.PHONY : longdouble.cpp.i
+
+longdouble.s: longdouble.cpp.s
+.PHONY : longdouble.s
+
+# target to generate assembly for a file
+longdouble.cpp.s:
+	cd /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug && $(MAKE) $(MAKESILENT) -f src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/build.make src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/longdouble.cpp.s
+.PHONY : longdouble.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -271,6 +295,9 @@ help:
 	@echo "... drawwidget.o"
 	@echo "... drawwidget.i"
 	@echo "... drawwidget.s"
+	@echo "... longdouble.o"
+	@echo "... longdouble.i"
+	@echo "... longdouble.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

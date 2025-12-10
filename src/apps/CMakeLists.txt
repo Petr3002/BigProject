@@ -1,2 +1,3 @@
 ADD_SUBDIRECTORY(Viewer2d)
+ADD_SUBDIRECTORY(Autotest)
 

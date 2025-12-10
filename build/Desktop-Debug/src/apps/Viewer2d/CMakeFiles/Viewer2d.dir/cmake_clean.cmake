@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Viewer2d.dir/Viewer2d_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Viewer2d.dir/drawwidget.cpp.o"
   "CMakeFiles/Viewer2d.dir/drawwidget.cpp.o.d"
+  "CMakeFiles/Viewer2d.dir/longdouble.cpp.o"
+  "CMakeFiles/Viewer2d.dir/longdouble.cpp.o.d"
   "CMakeFiles/Viewer2d.dir/main.cpp.o"
   "CMakeFiles/Viewer2d.dir/main.cpp.o.d"
   "CMakeFiles/Viewer2d.dir/mainwindow.cpp.o"

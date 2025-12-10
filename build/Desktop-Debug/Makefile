@@ -156,6 +156,45 @@ Viewer2d_autogen/fast:
 .PHONY : Viewer2d_autogen/fast
 
 #=============================================================================
+# Target rules for targets named Autotest
+
+# Build rule for target.
+Autotest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Autotest
+.PHONY : Autotest
+
+# fast build rule for target.
+Autotest/fast:
+	$(MAKE) $(MAKESILENT) -f src/apps/Autotest/CMakeFiles/Autotest.dir/build.make src/apps/Autotest/CMakeFiles/Autotest.dir/build
+.PHONY : Autotest/fast
+
+#=============================================================================
+# Target rules for targets named Autotest_autogen_timestamp_deps
+
+# Build rule for target.
+Autotest_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Autotest_autogen_timestamp_deps
+.PHONY : Autotest_autogen_timestamp_deps
+
+# fast build rule for target.
+Autotest_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps.dir/build.make src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps.dir/build
+.PHONY : Autotest_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Autotest_autogen
+
+# Build rule for target.
+Autotest_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Autotest_autogen
+.PHONY : Autotest_autogen
+
+# fast build rule for target.
+Autotest_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src/apps/Autotest/CMakeFiles/Autotest_autogen.dir/build.make src/apps/Autotest/CMakeFiles/Autotest_autogen.dir/build
+.PHONY : Autotest_autogen/fast
+
+#=============================================================================
 # Target rules for targets named PlaneGeometry
 
 # Build rule for target.
@@ -202,10 +241,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Autotest_autogen"
+	@echo "... Autotest_autogen_timestamp_deps"
 	@echo "... PlaneGeometry_autogen"
 	@echo "... PlaneGeometry_autogen_timestamp_deps"
 	@echo "... Viewer2d_autogen"
 	@echo "... Viewer2d_autogen_timestamp_deps"
+	@echo "... Autotest"
 	@echo "... PlaneGeometry"
 	@echo "... Viewer2d"
 .PHONY : help

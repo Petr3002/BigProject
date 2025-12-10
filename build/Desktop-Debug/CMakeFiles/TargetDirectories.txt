@@ -9,6 +9,11 @@
 /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Viewer2d/CMakeFiles/rebuild_cache.dir
 /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps.dir
 /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen.dir
+/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Autotest/CMakeFiles/Autotest.dir
+/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Autotest/CMakeFiles/edit_cache.dir
+/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Autotest/CMakeFiles/rebuild_cache.dir
+/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps.dir
+/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Autotest/CMakeFiles/Autotest_autogen.dir
 /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/CMakeFiles/edit_cache.dir
 /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/CMakeFiles/rebuild_cache.dir
 /home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry.dir

@@ -3,6 +3,8 @@ Viewer2d_autogen/timestamp: \
 	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/CMakeLists.txt \
 	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/drawwidget.cpp \
 	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/drawwidget.h \
+	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/longdouble.cpp \
+	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/longdouble.h \
 	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/main.cpp \
 	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/mainwindow.cpp \
 	/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/mainwindow.h \

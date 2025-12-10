@@ -29,6 +29,12 @@
 			null
 		],
 		[
+			"/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/longdouble.h",
+			"MU",
+			"EWIEGA46WW/moc_longdouble.cpp",
+			null
+		],
+		[
 			"/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -92,6 +98,11 @@
 	[
 		[
 			"/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/drawwidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/longdouble.cpp",
 			"MU",
 			null
 		],

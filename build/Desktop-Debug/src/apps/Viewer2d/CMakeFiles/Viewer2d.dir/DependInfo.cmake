@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "src/apps/Viewer2d/Viewer2d_autogen/timestamp" "custom" "src/apps/Viewer2d/Viewer2d_autogen/deps"
   "/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Viewer2d/Viewer2d_autogen/mocs_compilation.cpp" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/Viewer2d_autogen/mocs_compilation.cpp.o" "gcc" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/Viewer2d_autogen/mocs_compilation.cpp.o.d"
   "/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/drawwidget.cpp" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/drawwidget.cpp.o" "gcc" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/drawwidget.cpp.o.d"
+  "/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/longdouble.cpp" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/longdouble.cpp.o" "gcc" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/longdouble.cpp.o.d"
   "/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/main.cpp" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/main.cpp.o" "gcc" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/main.cpp.o.d"
   "/home/peter/BigProject/bigprojecttemplate/src/apps/Viewer2d/mainwindow.cpp" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/mainwindow.cpp.o" "gcc" "src/apps/Viewer2d/CMakeFiles/Viewer2d.dir/mainwindow.cpp.o.d"
   )

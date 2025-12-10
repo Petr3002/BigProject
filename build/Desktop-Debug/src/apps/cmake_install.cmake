@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Viewer2d/cmake_install.cmake")
+  include("/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/apps/Autotest/cmake_install.cmake")
 
 endif()
 

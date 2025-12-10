@@ -1,0 +1,1 @@
+/usr/bin/g++-13 -DQT_QML_DEBUG -g CMakeFiles/Autotest.dir/Autotest_autogen/mocs_compilation.cpp.o CMakeFiles/Autotest.dir/main.cpp.o CMakeFiles/Autotest.dir/Autotest.cpp.o -o Autotest  ../../lib/PlaneGeometry/libPlaneGeometry.a /usr/lib/x86_64-linux-gnu/libQt5Test.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 
