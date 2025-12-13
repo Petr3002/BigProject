@@ -67,10 +67,10 @@ include src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps.dir/compile
 include src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps.dir/progress.make
 
 src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
-src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps: src/lib/PlaneGeometry/libPlaneGeometry.a
 
 Viewer2d_autogen_timestamp_deps: src/apps/Viewer2d/CMakeFiles/Viewer2d_autogen_timestamp_deps

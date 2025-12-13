@@ -6,7 +6,16 @@
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry/CMakeLists.txt"
+		"/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry/CMakeLists.txt",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/peter/BigProject/bigprojecttemplate",
 	"DEP_FILE" : "/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/PlaneGeometry/PlaneGeometry_autogen/deps",
@@ -23,7 +32,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/PlaneGeometry/PlaneGeometry_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/PlaneGeometry/PlaneGeometry_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -36,6 +45,9 @@
 		"/home/peter/BigProject/bigprojecttemplate/build/Desktop-Debug/src/lib/PlaneGeometry",
 		"/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry",
 		"/home/peter/BigProject/bigprojecttemplate/src/lib/PlaneGeometry/include",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
 		"/usr/include/c++/13/backward",

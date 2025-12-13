@@ -335,10 +335,12 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/Autotest.cpp.o: /home/peter/BigProject
   /usr/include/c++/13/bits/stl_list.h \
   /usr/include/c++/13/bits/stl_map.h \
   /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
+  /usr/include/c++/13/bits/stl_set.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -393,6 +395,7 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/Autotest.cpp.o: /home/peter/BigProject
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
@@ -525,6 +528,9 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/Autotest.cpp.o: /home/peter/BigProject
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtMath \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
@@ -565,6 +571,7 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/Autotest.cpp.o: /home/peter/BigProject
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetaobject.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
@@ -1318,6 +1325,10 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/main.cpp.o: /home/peter/BigProject/big
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QtMath:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QVector:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -1361,6 +1372,8 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/main.cpp.o: /home/peter/BigProject/big
 /usr/include/stdlib.h:
 
 /usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF:
 
 /usr/include/stdint.h:
 
@@ -1407,6 +1420,8 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/main.cpp.o: /home/peter/BigProject/big
 /usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13/set:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
@@ -1557,6 +1572,8 @@ src/apps/Autotest/CMakeFiles/Autotest.dir/main.cpp.o: /home/peter/BigProject/big
 /usr/include/c++/13/bits/std_abs.h:
 
 /usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/stl_multiset.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
@@ -1756,6 +1773,8 @@ src/apps/Autotest/Autotest_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/mofunc_impl.h:
 
+/usr/include/c++/13/bits/stl_set.h:
+
 /usr/include/c++/13/bits/ostream_insert.h:
 
 /usr/include/c++/13/bits/invoke.h:
@@ -1803,6 +1822,8 @@ src/apps/Autotest/Autotest_autogen/mocs_compilation.cpp:
 /usr/include/features.h:
 
 /usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h:
 
 /usr/include/sched.h:
 

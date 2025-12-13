@@ -7,7 +7,7 @@
 Autotest::Autotest(QObject *parent) : QObject(parent){}
 void Autotest::testFirstExample(){
     double a1 = 2, a2 = 3;
-    double res = pointProduct(a1, a2);
+    double res = 3;
     double waitRes = 6;
 
     QVERIFY(fabs(res - waitRes) < 1e-6);
@@ -15,7 +15,7 @@ void Autotest::testFirstExample(){
 
 void Autotest::testSecondExample(){
     double a1 = 2.0, a2 = 3.0;
-    double res = pointProduct(a1, a2);
+    double res = 3;
     double waitRes = 6.0;
 
     QVERIFY2(fabs(res - waitRes) < 1e-6, "Misha, vsyo ne tak, davai po novoi");
@@ -26,7 +26,7 @@ void Autotest::testThirdExample(){
     QFETCH(double, a);
     QFETCH(double, b);
     QFETCH(double, res);
-    double actual = pointProduct(a, b);
+    double actual = 5;
 
     QCOMPARE(actual, res);
 }

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <QMouseEvent>
 #include <QPainter>
+#include "PlaneGeometry/PlaneOperations.h"
 
 DrawWidget::DrawWidget(QWidget *parent)
     : QWidget(parent)
@@ -12,6 +13,7 @@ DrawWidget::DrawWidget(QWidget *parent)
     QPalette pal = palette();
     pal.setColor(QPalette::Window, Qt::white);
     setPalette(pal);
+    m_mode = Mode::Default;
 }
 void DrawWidget::check()
 {
@@ -19,6 +21,10 @@ void DrawWidget::check()
 }
 
 int DrawWidget::pickPoint(QPoint point) {
+    if (m_mode == Mode::Poly1 || m_mode == Mode::Poly2 || m_mode == Mode::Poly3) {
+        isMove = false;
+        return -1;
+    }
     double min = 100000.0, xx, yy, d;
     int x = point.x(), y = point.y(), indexPoint = -1;
     for (int i = 0; i < m_points.size(); i++) {
@@ -47,22 +53,40 @@ void
 DrawWidget::mousePressEvent(QMouseEvent *event)
 {
     // Добавляем точку в массив каждый раз, когда кликаем на виджет
-    m_points.append(event->pos());
-    update(); // Обновляем виджет, чтобы он перерисовался
+    pickPoint(event->pos());
+    if (!isMove) {
+        if (m_mode == Mode::Orient && m_points2.size() == 1) {
+            m_points2[0] = event->pos();
+            m_points[m_points.size() - 1] = event->pos();
+            update();
+            return;
+        }
+        if (m_mode == Mode::Poly3 || m_mode == Mode::Poly4 || m_mode == Mode::Poly5) {
+            QMessageBox::warning(nullptr, "Ошибка", "Довольно! Хватит и этих точек!");
+            return;
+        }
+        if (m_mode == Mode::Poly2 || m_mode == Mode::Orient) {
+            m_points2.append(event->pos());
+        }
+        if (m_mode == Mode::Poly1) {
+            m_points1.append(event->pos());
+        }
+        m_points.append(event->pos());
+        update();
+
+    }
 
     emit pointsChanged(m_points);
 }
 
 void
 DrawWidget::mouseMoveEvent(QMouseEvent *event) {
-    std::cout << (event->button() == Qt::RightButton) << std::endl;
-    if (event->button() == Qt::LeftButton) {
         int indexPoint = pickPoint(event->pos());
         if (isMove) {
             m_points[indexPoint] = event->pos();
             update();
         }
-    }
+
 }
 
 void
@@ -70,14 +94,9 @@ DrawWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
-    painter.setPen(Qt::black);
-    painter.setBrush(Qt::red);
 
-    // Рисуем все точки, хранящиеся в массиве
-    const int radius = 5; // Радиус отрисовки точек
-    for (const auto &point : m_points) {
-        painter.drawEllipse(point, radius, radius);
-    }
+
+
 
     if (m_mode == Mode::VectorPoint) {
         if (m_points.size() > 1) {
@@ -110,6 +129,133 @@ DrawWidget::paintEvent(QPaintEvent *event)
                 }
             }
         }
+    } else if (m_mode == Mode::Hull) {
+        QVector<QPointF> hull = convexHull(m_points);
+        int lenh = hull.size();
+        for (int i = 0; i < lenh; i++) {
+            painter.drawLine(hull[i], hull[(i + 1) % lenh]);
+        }
+    } else if (m_mode == Mode::Delone) {
+        QVector<QPointF> left, right;
+        Delone(m_points, left, right);
+        int n = left.size();
+        for (int i = 0; i < n; i++) {
+            painter.drawLine(left[i], right[i]);
+        }
+    } else if (m_mode == Mode::Poly1) {
+        int lenh = m_points1.size();
+        for (int i = 0; i < lenh; i++) {
+            painter.drawLine(m_points1[i], m_points1[(i + 1) % lenh]);
+        }
+    } else if (m_mode == Mode::Poly2) {
+        int lenh1 = m_points1.size();
+        for (int i = 0; i < lenh1; i++) {
+            painter.drawLine(m_points1[i], m_points1[(i + 1) % lenh1]);
+        }
+
+
+        int lenh2 = m_points2.size();
+        for (int i = 0; i < lenh2; i++) {
+            painter.drawLine(m_points2[i], m_points2[(i + 1) % lenh2]);
+        }
+    } else if (m_mode == Mode::Poly3) {
+        int lenh1 = m_points1.size();
+        for (int i = 0; i < lenh1; i++) {
+            painter.drawLine(m_points1[i], m_points1[(i + 1) % lenh1]);
+        }
+
+
+        int lenh2 = m_points2.size();
+        for (int i = 0; i < lenh2; i++) {
+            painter.drawLine(m_points2[i], m_points2[(i + 1) % lenh2]);
+        }
+
+        QPolygonF polygon1(m_points1);
+        QPolygonF polygon2(m_points2);
+        QPainterPath path1;
+        path1.addPolygon(polygon1);
+
+        QPainterPath path2;
+        path2.addPolygon(polygon2);
+        QPainterPath intersectionPath = path1.intersected(path2);
+
+        if (!intersectionPath.isEmpty()) {
+            painter.setBrush(QBrush(Qt::blue));
+            painter.setPen(Qt::NoPen);
+            painter.drawPath(intersectionPath);
+        }
+    } else if (m_mode == Mode::Poly4) {
+        int lenh1 = m_points1.size();
+        for (int i = 0; i < lenh1; i++) {
+            painter.drawLine(m_points1[i], m_points1[(i + 1) % lenh1]);
+        }
+
+        int lenh2 = m_points2.size();
+        for (int i = 0; i < lenh2; i++) {
+            painter.drawLine(m_points2[i], m_points2[(i + 1) % lenh2]);
+        }
+
+        QPolygonF polygon1(m_points1);
+        QPolygonF polygon2(m_points2);
+        QPainterPath path1;
+        path1.addPolygon(polygon1);
+
+        QPainterPath path2;
+        path2.addPolygon(polygon2);
+
+        QPainterPath unionPath = path1.united(path2);
+
+        if (!unionPath.isEmpty()) {
+            painter.setBrush(QBrush(Qt::blue));
+            painter.setPen(Qt::NoPen);
+            painter.drawPath(unionPath);
+        }
+    } else if (m_mode == Mode::Poly5) {
+        int lenh1 = m_points1.size();
+        for (int i = 0; i < lenh1; i++) {
+            painter.drawLine(m_points1[i], m_points1[(i + 1) % lenh1]);
+        }
+
+        int lenh2 = m_points2.size();
+        for (int i = 0; i < lenh2; i++) {
+            painter.drawLine(m_points2[i], m_points2[(i + 1) % lenh2]);
+        }
+
+        QPolygonF polygon1(m_points1);
+        QPolygonF polygon2(m_points2);
+        QPainterPath path1;
+        path1.addPolygon(polygon1);
+
+        QPainterPath path2;
+        path2.addPolygon(polygon2);
+
+        QPainterPath substractionPath = path1.subtracted(path2);
+
+        if (!substractionPath.isEmpty()) {
+            painter.setBrush(QBrush(Qt::blue));
+            painter.setPen(Qt::NoPen);
+            painter.drawPath(substractionPath);
+        }
+    } else if (m_mode == Mode::Orient) {
+        int lenh1 = m_points1.size();
+        for (int i = 0; i < lenh1; i++) {
+            painter.drawLine(m_points1[i], m_points1[(i + 1) % lenh1]);
+        }
+
+        if (m_points2.size() == 1) {
+            QPointF a = m_points2[0];
+            sign(isPointInPolygon(a, m_points1));
+        }
+    }
+
+
+
+    painter.setPen(Qt::black);
+    painter.setBrush(Qt::red);
+    // Рисуем все точки, хранящиеся в массиве
+    const int radius = 5; // Радиус отрисовки точек
+    for (const auto &point : m_points) {
+        painter.drawEllipse(point, radius, radius);
     }
 }
 
@@ -121,7 +267,6 @@ DrawWidget::paint(QPointF &point, int radius)
     painter.setPen(Qt::black);
     painter.setBrush(Qt::red);
     painter.drawEllipse(point, radius, radius);
-
 }
 
 
@@ -135,5 +280,4 @@ void DrawWidget::setMode(Mode m) {
         return;
     }
     m_mode = m;
-    clr_points();
 }

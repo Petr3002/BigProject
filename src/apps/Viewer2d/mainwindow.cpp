@@ -16,11 +16,25 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->widget_2->setMode(Mode::Hull);
+    ui->widget_3->setMode(Mode::Delone);
+    ui->widget_4->setMode(Mode::Poly1);
+    ui->widget_5->setMode(Mode::Poly1);
+    ui->widget_6->setMode(Mode::Poly1);
+    ui->widget_7->setMode(Mode::Poly1);
     connect(ui->widget, &DrawWidget::pointsChanged, this, &MainWindow::updatePoints);
     connect(ui->RadioVectorPoint, &QRadioButton::toggled, this, [this](bool on){if (on) ui->widget->setMode(Mode::VectorPoint);});
     connect(ui->RadioVectorVector, &QRadioButton::toggled, this, [this](bool on){if (on) ui->widget->setMode(Mode::VectorVector);});
     connect(ui->RadioPolygon, &QRadioButton::toggled, this, [this](bool on){if (on) ui->widget->setMode(Mode::Polygon);});
     connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_pushButton_clicked);
+    connect(ui->pushButton_3, &QRadioButton::clicked, this, [this](bool on){ui->widget_4->setMode(Mode::Poly2);});
+    connect(ui->pushButton_4, &QRadioButton::clicked, this, [this](bool on){ui->widget_4->setMode(Mode::Poly3);});
+    connect(ui->pushButton_5, &QRadioButton::clicked, this, [this](bool on){ui->widget_5->setMode(Mode::Poly2);});
+    connect(ui->pushButton_6, &QRadioButton::clicked, this, [this](bool on){ui->widget_5->setMode(Mode::Poly4);});
+    connect(ui->pushButton_7, &QRadioButton::clicked, this, [this](bool on){ui->widget_6->setMode(Mode::Poly2);});
+    connect(ui->pushButton_8, &QRadioButton::clicked, this, [this](bool on){ui->widget_6->setMode(Mode::Poly5);});
+    connect(ui->pushButton_9, &QRadioButton::clicked, this, [this](bool on){ui->widget_7->setMode(Mode::Orient);});
+    connect(ui->widget_7, &DrawWidget::sign, this, &MainWindow::IsInside);
 
 }
 
@@ -45,6 +59,14 @@ void MainWindow::updatePoints(const QVector<QPointF>& points) {
 
 }
 
+void MainWindow::IsInside(bool t) {
+    if (t) {
+        ui->lineEdit_2->setText(QString("Внутри"));
+    } else {
+        ui->lineEdit_2->setText(QString("Снаружи"));
+    }
+}
+
 void MainWindow::on_pushButton_clicked()
 {
     bool ok1, ok2, ok3, ok4, ok5, ok6;
@@ -64,9 +86,7 @@ void MainWindow::on_pushButton_clicked()
 
         ui->lineEdit->setText(QString("%1").arg(p(x1, y1, x2, y2, x3, y3)));
     }
-
 }
-
 
 
 

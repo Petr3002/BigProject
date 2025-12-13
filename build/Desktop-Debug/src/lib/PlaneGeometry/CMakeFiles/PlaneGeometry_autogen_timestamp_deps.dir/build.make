@@ -66,8 +66,9 @@ include src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps.di
 # Include the progress variables for this target.
 include src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps.dir/progress.make
 
-src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
+src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 
 PlaneGeometry_autogen_timestamp_deps: src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps
 PlaneGeometry_autogen_timestamp_deps: src/lib/PlaneGeometry/CMakeFiles/PlaneGeometry_autogen_timestamp_deps.dir/build.make

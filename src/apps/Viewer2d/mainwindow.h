@@ -23,6 +23,7 @@ public:
 
 private slots:
     void updatePoints(const QVector<QPointF>& points);
+    void IsInside(bool t);
 
 
 private:

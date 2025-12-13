@@ -4,11 +4,25 @@
 #include <QWidget>
 #include <QVector>
 #include <QPointF>
+#include "PlaneGeometry/PlaneOperations.h"
+#include <iostream>
+#include <QPainterPath>
+
+using namespace std;
 
 enum class Mode {
+    Default,
     VectorPoint,
     VectorVector,
-    Polygon
+    Polygon,
+    Hull,
+    Delone,
+    Poly1,
+    Poly2,
+    Poly3,
+    Poly4,
+    Poly5,
+    Orient
 };
 
 class DrawWidget : public QWidget
@@ -17,6 +31,8 @@ class DrawWidget : public QWidget
 
 public:
     QVector<QPointF> m_points;
+    QVector<QPointF> m_points1;
+    QVector<QPointF> m_points2;
     explicit DrawWidget(QWidget *parent = nullptr);
     void clr_points();
     void paint(QPointF &point, int radius);
@@ -25,6 +41,7 @@ public:
 
 signals:
     void pointsChanged(const QVector<QPointF>& points);
+    void sign(bool t);
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
@@ -36,6 +53,5 @@ private:
     bool isMove;
     int pickPoint(QPoint point);
 };
-
 
 #endif // DRAWWIDGET_H

@@ -50,6 +50,26 @@ public:
     QLineEdit *x_3;
     QLineEdit *y_3;
     QPushButton *pushButton;
+    QWidget *tab_3;
+    DrawWidget *widget_2;
+    QWidget *tab_4;
+    DrawWidget *widget_3;
+    QWidget *tab_5;
+    DrawWidget *widget_4;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_4;
+    QWidget *tab_6;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
+    DrawWidget *widget_5;
+    QWidget *tab_7;
+    QPushButton *pushButton_8;
+    QPushButton *pushButton_7;
+    DrawWidget *widget_6;
+    QWidget *tab_8;
+    DrawWidget *widget_7;
+    QPushButton *pushButton_9;
+    QLineEdit *lineEdit_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -62,7 +82,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 10, 821, 581));
+        tabWidget->setGeometry(QRect(10, 0, 821, 581));
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
         widget = new DrawWidget(tab);
@@ -130,6 +150,66 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(290, 150, 88, 26));
         tabWidget->addTab(tab_2, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QString::fromUtf8("tab_3"));
+        widget_2 = new DrawWidget(tab_3);
+        widget_2->setObjectName(QString::fromUtf8("widget_2"));
+        widget_2->setGeometry(QRect(10, 20, 781, 501));
+        tabWidget->addTab(tab_3, QString());
+        tab_4 = new QWidget();
+        tab_4->setObjectName(QString::fromUtf8("tab_4"));
+        widget_3 = new DrawWidget(tab_4);
+        widget_3->setObjectName(QString::fromUtf8("widget_3"));
+        widget_3->setGeometry(QRect(20, 20, 781, 501));
+        tabWidget->addTab(tab_4, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
+        widget_4 = new DrawWidget(tab_5);
+        widget_4->setObjectName(QString::fromUtf8("widget_4"));
+        widget_4->setGeometry(QRect(10, 20, 671, 501));
+        pushButton_3 = new QPushButton(tab_5);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(690, 20, 121, 71));
+        pushButton_4 = new QPushButton(tab_5);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(690, 110, 121, 71));
+        tabWidget->addTab(tab_5, QString());
+        tab_6 = new QWidget();
+        tab_6->setObjectName(QString::fromUtf8("tab_6"));
+        pushButton_5 = new QPushButton(tab_6);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(690, 10, 121, 71));
+        pushButton_6 = new QPushButton(tab_6);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(690, 100, 121, 71));
+        widget_5 = new DrawWidget(tab_6);
+        widget_5->setObjectName(QString::fromUtf8("widget_5"));
+        widget_5->setGeometry(QRect(10, 10, 671, 501));
+        tabWidget->addTab(tab_6, QString());
+        tab_7 = new QWidget();
+        tab_7->setObjectName(QString::fromUtf8("tab_7"));
+        pushButton_8 = new QPushButton(tab_7);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        pushButton_8->setGeometry(QRect(680, 100, 121, 71));
+        pushButton_7 = new QPushButton(tab_7);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setGeometry(QRect(680, 10, 121, 71));
+        widget_6 = new DrawWidget(tab_7);
+        widget_6->setObjectName(QString::fromUtf8("widget_6"));
+        widget_6->setGeometry(QRect(0, 10, 671, 501));
+        tabWidget->addTab(tab_7, QString());
+        tab_8 = new QWidget();
+        tab_8->setObjectName(QString::fromUtf8("tab_8"));
+        widget_7 = new DrawWidget(tab_8);
+        widget_7->setObjectName(QString::fromUtf8("widget_7"));
+        widget_7->setGeometry(QRect(10, 10, 671, 501));
+        pushButton_9 = new QPushButton(tab_8);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pushButton_9->setGeometry(QRect(690, 10, 121, 71));
+        lineEdit_2 = new QLineEdit(tab_8);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(690, 90, 121, 31));
+        tabWidget->addTab(tab_8, QString());
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -141,7 +221,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(7);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -157,7 +237,33 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Tab 1", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Answer", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\321\201\321\201\321\207\320\270\321\202\320\260\321\202\321\214", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Tab 2", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "\320\224\320\273\320\270\320\275\320\275\320\260\321\217 \320\260\321\200\320\270\321\204\320\274\320\265\321\202\320\270\320\272\320\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("MainWindow", "\320\222\321\213\320\277\321\203\320\272\320\273\320\260\321\217 \320\276\320\261\320\276\320\273\320\276\321\207\320\272\320\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\320\224\320\265\320\273\320\276\320\275\320\265", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214\n"
+"\320\277\320\265\321\200\320\262\321\213\320\271\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214\n"
+"\320\262\321\202\320\276\321\200\320\276\320\271\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QCoreApplication::translate("MainWindow", "\320\237\320\265\321\200\320\265\321\201\320\265\321\207\320\265\320\275\320\270\320\265 \320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272\320\276\320\262", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214\n"
+"\320\277\320\265\321\200\320\262\321\213\320\271\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214\n"
+"\320\262\321\202\320\276\321\200\320\276\320\271\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_6), QCoreApplication::translate("MainWindow", "\320\236\320\261\321\212\320\265\320\264\320\270\320\275\320\265\320\275\320\270\320\265 \320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272\320\276\320\262", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214\n"
+"\320\262\321\202\320\276\321\200\320\276\320\271\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214\n"
+"\320\277\320\265\321\200\320\262\321\213\320\271\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_7), QCoreApplication::translate("MainWindow", "\320\240\320\260\320\267\320\275\320\276\321\201\321\202\321\214 \320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272\320\276\320\262", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\272\320\276\320\275\321\207\320\270\321\202\321\214\n"
+"\320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_8), QCoreApplication::translate("MainWindow", "\320\236\321\200\320\270\320\265\320\275\321\202\320\260\321\206\320\270\321\217 \321\202\320\276\321\207\320\272\320\270 \320\276\321\202\320\275\320\276\321\201\320\270\321\202\320\265\320\273\321\214\320\275\320\276 \320\274\320\275\320\276\320\263\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272\320\260", nullptr));
     } // retranslateUi
 
 };

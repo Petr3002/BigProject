@@ -352,6 +352,7 @@
 #define __ORDER_BIG_ENDIAN__ 4321
 #define __DBL_MANT_DIG__ 53
 #define __cpp_inheriting_constructors 201511L
+#define QT_CORE_LIB 1
 #define __SIZEOF_FLOAT128__ 16
 #define __BFLT16_MANT_DIG__ 8
 #define __DEC64_MIN__ 1E-383DD

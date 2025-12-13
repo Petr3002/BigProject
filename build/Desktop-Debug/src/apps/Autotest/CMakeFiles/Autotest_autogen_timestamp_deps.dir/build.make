@@ -66,9 +66,9 @@ include src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps.dir/compile
 # Include the progress variables for this target.
 include src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps.dir/progress.make
 
-src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
+src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
 src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt5Test.so.5.15.13
 src/apps/Autotest/CMakeFiles/Autotest_autogen_timestamp_deps: src/lib/PlaneGeometry/libPlaneGeometry.a
 

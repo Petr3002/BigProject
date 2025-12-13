@@ -1,0 +1,1 @@
+/usr/bin/g++-13 -DQT_QML_DEBUG -g CMakeFiles/lib.dir/lib_autogen/mocs_compilation.cpp.o -o lib 
